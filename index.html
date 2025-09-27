@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WALLMAX DEVELOPERS</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; padding:0; text-align:center; background:#111; color:#fff;}
+    header {background:#222; padding:1rem;}
+    header img {height:50px;}
+    .section-heading {
+      text-align:center; color:#D4A017; margin-bottom:1rem; position:relative; display:inline-block;
+    }
+    .section-heading::after {
+      content:""; position:absolute; left:50%; bottom:-8px; width:0; height:3px; background:#D4A017;
+      border-radius:2px; transition:all 0.4s ease-in-out; transform:translateX(-50%);
+    }
+    .section-heading:hover::after {width:50px;}
+    .download-card {background:#333; padding:1rem; margin:1rem auto; width:300px; border-radius:8px;}
+    footer {background:#222; padding:1rem; margin-top:2rem;}
+    #backToTop {display:none; position:fixed; bottom:20px; right:30px; background:#D4A017; color:#111;
+      padding:10px; border:none; border-radius:5px; cursor:pointer;}
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/logo.png" alt="WALLMAX Logo" />
+  <h1>WALLMAX DEVELOPERS</h1>
+</header>
+
+<section>
+  <h2 class="section-heading">About Us</h2>
+  <p>We create innovative and reliable computer applications to empower users worldwide.</p>
+</section>
+
+<section>
+  <h2 class="section-heading">Available Downloads</h2>
+  <div class="download-card">
+    <p>Sample App v1.0</p>
+    <a href="downloads/app-v1.exe" download>Download</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-heading">Contact Us</h2>
+  <p>Email: wallmaxdevelopers@example.com</p>
+</section>
+
+<button id="backToTop">Back to Top</button>
+
+<footer>
+  &copy; 2025 WALLMAX DEVELOPERS. All rights reserved.
+</footer>
+
+<script>
+const btn = document.getElementById("backToTop");
+window.onscroll = () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    btn.style.display = "block";
+  } else {
+    btn.style.display = "none";
+  }
+};
+btn.onclick = () => {document.body.scrollTop = 0; document.documentElement.scrollTop = 0;};
+</script>
+
+</body>
+</html>
