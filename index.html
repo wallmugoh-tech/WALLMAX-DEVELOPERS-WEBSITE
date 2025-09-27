@@ -30,15 +30,23 @@
       border-radius:2px; transition:all 0.4s ease-in-out; transform:translateX(-50%);
     }
     .section-heading:hover::after {width:50px;}
-    .download-card {
-  background:#f5f5f5; 
-  color:#000;   
-  padding:1rem;
-  margin:1rem auto;
-  width:300px;
-  border-radius:8px;
-  border:1px solid #ddd;
+    .download-card 
+    .btn {
+  display: inline-block;
+  background-color: black;   /* Button background */
+  color: white;              /* Text color */
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s ease;
 }
+
+.btn:hover {
+  background-color: #FFD700; /* Gold on hover */
+  color: black;              /* Text turns black */
+}
+
 
 footer {background:#fff; padding:1rem; margin-top:2rem; color:#000;}
     #backToTop {display:none; position:fixed; bottom:20px; right:30px; background:#D4A017; color:#111;
@@ -59,8 +67,11 @@ footer {background:#fff; padding:1rem; margin-top:2rem; color:#000;}
 <section>
   <h2 class="section-heading">Available Downloads</h2>
   <div class="download-card">
-    <p>Sample App v1.0</p>
-    <a href="downloads/app-v1.exe" download>Download</a>
+    <a href="https://drive.google.com/uc?export=download&id=1J14eq1BOPyACShHJWbgNeAhcEHOdZ_OP" 
+   class="btn" download>
+   Download Setup
+</a>
+
   </div>
 </section>
 
